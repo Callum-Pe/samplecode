@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head></head>
+  <body>
+    <div id="txt">
+        <script id="txt0"> dcf-says$ </script>
+        <noembed id="txt4"> easy   </noembed>
+        <noframes id="txt6"> 2   </noframes>
+        <noscript id="txt3"> be   </noscript>
+        <div id="txt2">The </div>
+        <div>
+          <noscript id="txt5"> !   </noscript>
+        </div>
+        <span id="txt1">answer:</span>
+      </div>
+
+      <div id="innerHTMLtxt"> dcf-says$  This   should    be    easy    !    2   </div>
+    <div id="textContenttxt"><div>
+
+    <script> 
+    for (let i = 0; i &lt; 7; i++) { 
+      x = "txt" + i;
+      y = document.getElementById("innerHTMLtxt").textContent
+      document.getElementById("innerHTMLtxt").textContent = y + document.getElementById(x).firstChild.nodeValue
+    }
+    </script>
+    <script>
+      document.getElementById("txt1").textContent = 'answer:'
+      document.getElementById("txt2").textContent = 'The '
+    </script>
+
+
+    
+  
+</div></div></body></html>
